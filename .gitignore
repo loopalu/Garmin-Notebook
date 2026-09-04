@@ -1,0 +1,12 @@
+DevTools
+connectiq-sdk*
+garmin_developer_key
+Notebook-Watch/bin/
+Notebook-Watch/.vscode/
+Notebook-Android/.gradle/
+Notebook-Android/.idea/
+Notebook-Android/local.properties
+Notebook-Android/build/
+Notebook-Android/app/build/
+Notebook-Android/captures/
+Notebook-Android/*.iml

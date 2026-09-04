@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="maximum_image_dimension_pixels">128</integer>
+</resources>

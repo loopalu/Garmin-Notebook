@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Notebook</string>
+    <string name="back">Back</string>
+    <string name="sync">Sync</string>
+    <string name="starting_garmin_connect">Starting Garmin Connect…</string>
+    <string name="connecting_to_device">Connecting to %1$s…</string>
+    <string name="sending_image_progress">Sending image %1$d%%…</string>
+    <string name="new_directory">New directory</string>
+    <string name="new_text_item">New text item</string>
+    <string name="rename_item">Rename item</string>
+    <string name="edit_named_item">Edit %1$s</string>
+    <string name="delete_named_item">Delete %1$s?</string>
+    <string name="delete_item_explanation">This removes the item from the watch.</string>
+    <string name="ok">OK</string>
+    <string name="connect_to_watch">Connect to your Garmin watch.</string>
+    <string name="connection_requirements">The watch must be paired and connected in Garmin Connect, and the Notebook watch app must be installed.</string>
+    <string name="no_devices_found">No paired Connect IQ devices were found.</string>
+    <string name="connect">Connect</string>
+    <string name="refresh_devices">Refresh devices</string>
+    <string name="connection_problem">Connection problem</string>
+    <string name="choose_device">Choose device</string>
+    <string name="device_connected">Connected</string>
+    <string name="device_not_connected">Not connected</string>
+    <string name="device_not_paired">Not paired</string>
+    <string name="device_status_unknown">Status unknown</string>
+    <string name="connected_to_device">Connected to %1$s</string>
+    <string name="no_directories">No Notebook directories yet</string>
+    <string name="add_directory">Add directory</string>
+    <string name="directory_actions">Rename / delete directory</string>
+    <string name="directory_empty">This directory is empty</string>
+    <string name="empty_text_item">Empty text item</string>
+    <string name="image_dimensions">Image · %1$dx%2$d</string>
+    <string name="edit_text">Edit text</string>
+    <string name="rename">Rename</string>
+    <string name="delete">Delete</string>
+    <string name="add_text">Add text</string>
+    <string name="add_image">Add image</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="file_name">File name</string>
+    <string name="text">Text</string>
+    <string name="directory">Directory</string>
+    <string name="delete_directory">Delete directory</string>
+    <string name="save_name">Save name</string>
+
+    <string name="garmin_sdk_initialization_failed">Garmin SDK initialization failed: %1$s.</string>
+    <string name="garmin_communication_stopped">Garmin communication stopped.</string>
+    <string name="unable_to_list_garmin_devices">Unable to list Garmin devices.</string>
+    <string name="selected_garmin_device_unavailable">The selected Garmin device is no longer available.</string>
+    <string name="unable_to_check_garmin_connection">Unable to check the Garmin connection.</string>
+    <string name="wait_for_device_connection">Open Garmin Connect and wait for %1$s to connect.</string>
+    <string name="notebook_not_installed_on_device">Notebook is not installed on %1$s.</string>
+    <string name="connect_to_garmin_watch_first">"Connect to a Garmin watch first."</string>
+    <string name="garmin_rejected_message">"Garmin rejected the message: %1$s."</string>
+    <string name="garmin_connect_not_ready">Garmin Connect is not ready.</string>
+    <string name="garmin_connect_service_unavailable">Garmin Connect service is unavailable.</string>
+    <string name="device_disconnected">%1$s disconnected.</string>
+    <string name="garmin_sdk_already_stopped">"Garmin SDK was already stopped."</string>
+    <string name="could_not_receive_notebook_response">Could not receive a Notebook response.</string>
+    <string name="could_not_listen_for_notebook_messages">Could not listen for Notebook messages.</string>
+
+    <!-- These names are looked up dynamically by Garmin's Connect IQ SDK. -->
+    <string name="install_needed_title" tools:ignore="UnusedResources">Garmin Connect required.</string>
+    <string name="install_needed_message" tools:ignore="UnusedResources">Notebook uses Garmin Connect to communicate with your watch.</string>
+    <string name="install_needed_yes" tools:ignore="UnusedResources">Install Garmin Connect.</string>
+    <string name="install_needed_cancel" tools:ignore="UnusedResources">Not now</string>
+    <string name="upgrade_needed_title" tools:ignore="UnusedResources">Update Garmin Connect.</string>
+    <string name="upgrade_needed_message" tools:ignore="UnusedResources">A newer Garmin Connect version is required to communicate with your watch.</string>
+    <string name="upgrade_needed_yes" tools:ignore="UnusedResources">Update</string>
+    <string name="upgrade_needed_cancel" tools:ignore="UnusedResources">Not now</string>
+</resources>
