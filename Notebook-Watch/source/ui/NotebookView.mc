@@ -4,7 +4,6 @@ import Toybox.WatchUi;
 
 class NotebookView extends WatchUi.View {
 
-    private const TITLE_DISTANCE_FROM_TOP_OF_DISPLAY = 18;
     private const CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY = 52;
     private const CONTENT_DISTANCE_FROM_LEFT_AND_RIGHT_OF_DISPLAY = 24;
     private const TEXT_DISTANCE_FROM_BOTTOM_OF_DISPLAY = 24;
@@ -39,7 +38,6 @@ class NotebookView extends WatchUi.View {
             return;
         }
 
-        drawTitle(display, item["name"] as String);
         if (directoryService.isTypeOf(item, "text")) {
             drawTextItem(display, item);
         } else {
@@ -50,17 +48,6 @@ class NotebookView extends WatchUi.View {
     function onHide() as Void {
         imageBuffer = null;
         numberOfRowsRendered = 0;
-    }
-
-    private function drawTitle(display as Dc, name as String) as Void {
-        display.setColor(Graphics.COLOR_WHITE, Graphics.COLOR_TRANSPARENT);
-        display.drawText(
-            display.getWidth() / 2,
-            TITLE_DISTANCE_FROM_TOP_OF_DISPLAY,
-            Graphics.FONT_XTINY,
-            name,
-            Graphics.TEXT_JUSTIFY_CENTER
-        );
     }
 
     private function drawTextItem(display as Dc, item as Dictionary) as Void {

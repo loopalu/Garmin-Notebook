@@ -44,8 +44,6 @@ If the simulator is already running, omit `-StartSimulator`:
 powershell -ExecutionPolicy Bypass -File .\tools\run-watch-tests.ps1
 ```
 
-The storage tests clear Notebook's application storage inside the simulator. Tests do not access or modify storage on a physical watch device. 
-
 ## Building the app
 
 Run in the project root directory:
@@ -61,7 +59,7 @@ $sdk = "..\connectiq-sdk-win-9.2.0-2026-06-09-92a1605b2"
     -w
 ```
 
-`BUILD SUCCESSFUL` indicates that the watch app was produced to:
+`BUILD SUCCESSFUL` means that the watch app was built to:
 
 ```text
 Notebook-Watch\bin\Notebook.prg
@@ -73,7 +71,7 @@ It is possible to build the app also via Visual Studio Code using the Monkey C e
 
 ## Installing on an Enduro 3
 
-Installation instructions below are for local development and for sideloading the app in user's phone. It does not publish the app to the Connect IQ Store.
+Installation instructions below are for local development and for sideloading the app in user's phone.
 
 1. Build `bin\Notebook.prg` using build instructions above.
 2. Connect Enduro 3 watch to the computer with a USB data cable.
@@ -92,5 +90,3 @@ If the watch displays the Connect IQ `Q!` error, reconnect it over USB and inspe
 ```text
 GARMIN\APPS\LOGS\CIQ_LOG.YML
 ```
-
-The simulator tests protect the transfer and rendering behavior, but only a physical Enduro 3 can conclusively verify its watchdog timing and firmware-specific behavior.
