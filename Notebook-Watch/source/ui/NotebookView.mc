@@ -8,7 +8,6 @@ class NotebookView extends WatchUi.View {
     private const CONTENT_DISTANCE_FROM_LEFT_AND_RIGHT_OF_DISPLAY = 24;
     private const TEXT_DISTANCE_FROM_BOTTOM_OF_DISPLAY = 24;
     private const SPACE_BELOW_SCALABLE_IMAGE = 34;
-    private const SPACE_BELOW_VERTICALLY_POSITIONED_IMAGE = 10;
     private const MINIMUM_IMAGE_SCALE = 1;
 
     private var directoryService as DirectoryService;
@@ -98,8 +97,7 @@ class NotebookView extends WatchUi.View {
         var bitmapWidth = imageWidth * scale;
         var bitmapHeight = imageHeight * scale;
         var startX = (display.getWidth() - bitmapWidth) / 2;
-        var imagePositionAreaHeight = display.getHeight() - CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY - SPACE_BELOW_VERTICALLY_POSITIONED_IMAGE;
-        var startY = CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY + ((imagePositionAreaHeight - bitmapHeight) / 2);
+        var startY = (display.getHeight() - bitmapHeight) / 2;
 
         if (imageBuffer == null) {
             imageBuffer = Graphics.createBufferedBitmap({

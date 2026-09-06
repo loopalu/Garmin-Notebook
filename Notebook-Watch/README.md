@@ -58,6 +58,20 @@ Notebook-Watch\bin\Notebook.prg
 
 Test runs can generate also `Notebook-tests.prg` That app is not for running it in the actual Garmin watch.
 
+## Creating an IQ package
+
+Run in the project root directory:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\create-iq.ps1
+```
+
+`BUILD SUCCESSFUL` means that the distributable package was created to:
+
+```text
+Notebook-Watch\bin\Notebook.iq
+```
+
 ## Installing on an Enduro 3
 
 Installation instructions below are for local development and for sideloading the app in user's phone.
