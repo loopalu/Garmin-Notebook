@@ -4,7 +4,7 @@ import Toybox.WatchUi;
 
 class NotebookView extends WatchUi.View {
 
-    private const CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY = 52;
+    private const CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY = 24;
     private const CONTENT_DISTANCE_FROM_LEFT_AND_RIGHT_OF_DISPLAY = 24;
     private const TEXT_DISTANCE_FROM_BOTTOM_OF_DISPLAY = 24;
     private const SPACE_BELOW_SCALABLE_IMAGE = 34;
@@ -62,7 +62,7 @@ class NotebookView extends WatchUi.View {
             :color => Graphics.COLOR_WHITE,
             :backgroundColor => Graphics.COLOR_TRANSPARENT,
             :font => Graphics.FONT_XTINY,
-            :justification => Graphics.TEXT_JUSTIFY_LEFT,
+            :justification => Graphics.TEXT_JUSTIFY_LEFT | Graphics.TEXT_JUSTIFY_VCENTER,
             :locX => CONTENT_DISTANCE_FROM_LEFT_AND_RIGHT_OF_DISPLAY,
             :locY => CONTENT_DISTANCE_FROM_TOP_OF_DISPLAY,
             :width => contentWidth,
